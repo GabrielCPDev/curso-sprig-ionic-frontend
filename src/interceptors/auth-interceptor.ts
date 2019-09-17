@@ -4,7 +4,6 @@ import { Observable } from 'rxjs/Rx'; // IMPORTANTE: IMPORT ATUALIZADO
 import { StorageService } from '../services/storage.service';
 import { API_CONFIG } from '../config/api.config';
 
-
 @Injectable()
 export class AuthInterceptor implements HttpInterceptor {
 

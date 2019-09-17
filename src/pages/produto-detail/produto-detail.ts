@@ -39,7 +39,6 @@ export class ProdutoDetailPage {
       error => {});
   }
 
-  
   addToCart(produto: ProdutoDTO) {
     this.cartService.addProduto(produto);
     this.navCtrl.setRoot('CartPage');
