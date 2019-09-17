@@ -1,9 +1,8 @@
-import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { AuthService } from '../services/auth.service';
-
+import { Component, ViewChild } from "@angular/core";
+import { AuthService } from "../services/auth.service";
+import { SplashScreen } from "@ionic-native/splash-screen";
+import { StatusBar } from "@ionic-native/status-bar";
+import { Platform, Nav } from "ionic-angular";
 
 @Component({
   templateUrl: 'app.html'
@@ -27,6 +26,7 @@ export class MyApp {
     this.pages = [
       { title: 'Profile', component: 'ProfilePage' },
       { title: 'Categorias', component: 'CategoriasPage' },
+      { title: 'Carrinho', component: 'CartPage'},
       { title: 'Logout', component: ''}
     ];
 
